@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CompScience Resources - Home</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/java.png" alt="Java logo">
+            <h1>CompScience Resources</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="csip1010.html">CSIP 1010 Resources</a></li>
+                <li><a href="variables.html">Java Variables</a></li>
+                <li><a href="data_types.html">Java Data Types</a></li>
+                <li><a href="access_specifiers.html">Access Specifiers</a></li>
+                <li><a href="classes.html">Java Classes</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <h2>About Java Classes</h2>
+
+        <p>In Java, classes are like blueprints for creating objects. The class tells the computer what the objects contain and what you can do with them.</p>
+
+        <hr>
+
+        <h2>Parts of a Java Class</h2>
+
+        <p>Every Java class is made up a few main parts: </p>
+
+        <ul>
+            <li>A class declaration amd instance variables</li>
+            <li>A constructor</li>
+            <li>Accesors (also called Setters)</li>
+            <li>Mutateors (also called Getters)</li>
+        </ul>
+
+        <p>Each of these parts preforms it's own roll to make a class function.</p>
+
+        <h3>Class Declaration & Instance Variables</h3>
+
+        <p>This is where you put the name of the class and declare instance variables.</p>
+
+        <div class="codeblock">
+<pre>public class Circle {
+    private double radius;
+}</pre>
+        </div>
+
+        <h3>Constructor</h3>
+
+        <p>A constructor is used to create object of a class. It is also responseable for initializing instance variables.</p>
+
+        <div class="codeblock">
+<pre>public Circle() {
+    radius = 0;
+}</pre>
+        </div>
+
+        <h4>Overloaded Constructor</h4>
+        <p>An overloaded constructor can be used to set the value of instance variables for an object while it is being created</p>
+
+        <div class="codeblock">
+<pre>public Circle(double radius) {
+    this.radius = radius;
+}</pre>
+        </div>
+
+        <h3>Mutateors</h3>
+
+        <p>Mutateors are used to alter the instance variables of an object</p>
+
+        <div class="codeblock">
+<pre>public void setRadius(double radius) {
+    this.radius = radius;
+}</pre>
+        </div>
+
+        <h3>Accesors</h3>
+
+        <p>Accesors are used to retreive information from an object</p>
+
+        <div class="codeblock">
+<pre>public double getRadius() {
+    return radius;
+}</pre>
+        </div>
+
+        <hr>
+
+        <h2>Example Class</h2>
+        
+        <h3>Circle Class</h3>
+        <div class="codeblock">
+<pre>public class Circle {
+    
+    private double radius;
+    
+    public Circle() {
+        radius = 0;
+    }
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+    public double getRadius() {
+        return radius;
+    }
+    public double getArea() {
+        return 3.14 * radius *radius;
+    }
+}</pre>
+        </div>
+
+        <h3>CircleTester Class</h3>
+        <div class="codeblock">
+<pre>public class CircleTester {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.setRadius(15);
+        System.out.println(circle.getRadius());
+        System.out.println(circle.getArea());
+    }
+}
+</pre>
+        </div>
+
+        <h4>Output from Running CircleTester</h4>
+        <div class="codeblock">
+<pre>15.0
+706.5
+
+Process finished with exit code 0</pre>
+        </div>
+
+        <h4>Screenshots</h4>
+        <img src="images/CircleTesterOutput.png" alt="Screenshot of output of the CircleTester class in IntelliJ IDEA Community Edition">
+
+        <h2>Further Reading</h2>
+        <p><a href="https://www.w3schools.com/java/java_classes.asp" target="_blank" title="W3 Schools">W3 Schools: Java Classes and Objects</a></p>
+        <p><a href="https://www.geeksforgeeks.org/classes-objects-java/" target="_blank" title="Geeks for Geeks Classes">Classes and Objects in Java - Geeks for Geeks</a></p>
+
+        <!--CSIP 1010-->
+        </main>
+        <hr>
+        <footer>
+            <img src="images/java-logo.png" alt="Java Logo in black">
+            &copy;RMF 2023
+            <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></p>
+            <p><a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Freepik - Flaticon</a></p>
+        </footer>
+    </div>
+</body>
+</html>

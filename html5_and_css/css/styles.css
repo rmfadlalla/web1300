@@ -1,0 +1,165 @@
+/*phone*/
+.codeblock {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #E5E5E5;
+    width: 95%;
+    margin: 20px auto;
+    padding: 0px 10px;
+    overflow: scroll;   
+}
+
+.indent {
+    margin-left: 30px;
+}
+
+html {
+    background-color: #14213D;
+}
+
+body {
+    background-color: #E5E5E5;
+    width: 95%;
+    margin: 20px auto;
+    border: solid #14213D;
+    border-radius: 20px;
+}
+
+#container{
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    background-color: #E5E5E5;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+header img {
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+nav {
+    margin: 50px auto;
+    width: 100%;
+    background-color: #FCA311;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin: 2px;
+}
+
+nav a {
+    color: #14213D;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: #E5E5E5;
+    text-decoration: underline;
+}
+
+/*
+nav li a {
+    color: #14213D;
+    font-size: 1.2em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+*/
+
+main {
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+main a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/*tablet*/
+@media(min-width: 768px) {
+    body {
+        width: 85%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header img{
+        width: 7%;
+    }
+
+    nav {
+        display: inline-block;
+        border: none;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer img {
+        width: 7%;
+    }
+}
+
+
+/*desktop*/
+@media(min-width: 1024px) {
+    body {
+        width: 40%;
+    }
+
+    .codeblock {
+        width: 95%;
+        margin: 20px auto;
+        padding: 0px 20px; 
+    }
+}
