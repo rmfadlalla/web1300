@@ -1,10 +1,10 @@
 /* Global */
 :root {
-    --color1: #F72585;
-    --color2: #7209B7;
-    --color3: #3A0CA3;
-    --color4: #4361EE;
-    --color5: #4CC9F0;
+    --color1: #FF6700;
+    --color2: #EBEBEB;
+    --color3: #C0C0C0;
+    --color4: #3A6EA5;
+    --color5: #004E98;
 }
 
 img {
@@ -37,19 +37,19 @@ img {
 }
 
 body {
-    background-color: var(--color3);
+    background-color: var(--color5);
     margin: auto;
 }
 
 #container{
     width: 95%;
-    background-color: var(--color5);
+    background-color: var(--color2);
     margin: 20px auto;
     border-radius: 20px;
 }
 
 header {
-    background-color: var(--color5);
+    background-color: var(--color2);
     padding: 10px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -65,7 +65,7 @@ header img, footer img {
 }
 
 nav {
-    background-color: var(--color4);
+    background-color: var(--color5);
     text-align: center;
     padding: 2px;
 }
@@ -91,7 +91,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: var(--color2);
+    background-color: var(--color3);
 }
 
 main{
@@ -117,6 +117,7 @@ aside {
 .btn {
     display: block;
     background-color: var(--color1);
+    min-width: 300px;
     text-decoration: none;
     text-align: center;
     font-size: 1.1em;
@@ -124,10 +125,11 @@ aside {
     line-height: 40px;
     margin: 10px 0;
     padding: 5px;
+    color: var(--color2);
 }
 
 button:hover {
-    
+    background-color: var(--color3);
 }
 
 footer{
@@ -160,6 +162,7 @@ td, th {
 }
 
 th {
+    color: var(--color1);
 }
 
 td {
@@ -178,6 +181,7 @@ td {
     }
 
     nav {
+        width: 100%;
         display: inline-block;
         border: none;
     }
