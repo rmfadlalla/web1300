@@ -91,7 +91,7 @@ nav li a {
 }
 
 nav li a:hover {
-
+    background-color: var(--color2);
 }
 
 main{
@@ -105,9 +105,9 @@ main img {
     box-shadow: 5px 5px 5px black;
 }
 
-main a {
-
-}
+/* main a {
+    c
+} */
 
 aside {
     display: none;
@@ -116,6 +116,7 @@ aside {
 
 .btn {
     display: block;
+    background-color: var(--color1);
     text-decoration: none;
     text-align: center;
     font-size: 1.1em;
