@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Classes - CompScience Resources</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/java.png" alt="Java logo">
+            <h1>CompScience Resources</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="csip1010.html">CSIP 1010 Resources</a></li>
+                <!-- <li><a href="csip1020.html">CSIP 1020 Resources</a></li>
+                <li><a href="citc1301.html">CITC 1301 Resources</a></li>
+                <li><a href="citc1302.html">CITC 1302 Resources</a></li>
+                <li><a href="citc1332.html">CITC 1332 Resources</a></li> -->
+                <li><a href="variables.html">Java Variables</a></li>
+                <li><a href="data_types.html">Java Data Types</a></li>
+                <li><a href="access_specifiers.html">Access Specifiers</a></li>
+                <li><a href="classes.html">Java Classes</a></li>
+                <li><a href="objects.html">Java Objects</a></li>
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="main_method.html">Main Method</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <div id="mobile_jump">
+                    <h3>Jump to:</h3>
+                    <ul>
+                        <li><a href="#java_classes">Java Classes</a></li>
+                        <li><a href="#declaration">Class Declaration & Instance Variables</a></li>
+                        <li><a href="constructor">Constructor</a></li>
+                        <li><a href="mutators">Mutators</a></li>
+                        <li><a href="accesors">Accesors</a></li>
+                        <li><a href="example">Example Class</a></li>
+                        <li><a href="screenshots">Screenshots</a></li>
+                    </ul>
+                </div>
+                <h2 id="java_classes">About Java Classes</h2>
+
+                <p>In Java, classes are like blueprints for creating objects. The class tells the computer what the objects contain and what you can do with them.</p>
+
+                <hr>
+
+                <h2>Parts of a Java Class</h2>
+
+                <p>Every Java class is made up a few main parts: </p>
+
+                <ul>
+                    <li>A class declaration amd instance variables</li>
+                    <li>A constructor</li>
+                    <li>Mutators (also called Getters)</li>
+                    <li>Accesors (also called Setters)</li>
+                </ul>
+
+                <p>Each of these parts preforms it's own roll to make a class function.</p>
+
+                <h3 id="declaration">Class Declaration & Instance Variables</h3>
+
+                <p>This is where you put the name of the class and declare instance variables.</p>
+
+                <div class="codeblock">
+                    public class Circle {
+                        <div class="indent">
+                        private double radius;
+                        </div>
+                    }
+                </div>
+
+                <h3 id="constructor">Constructor</h3>
+
+                <p>A constructor is used to create object of a class. It is also responseable for initializing instance variables.</p>
+
+                <div class="codeblock">
+                    public Circle() {
+                        <div class="indent">
+                            radius = 0;
+                        </div>
+                    }
+                </div>
+
+                <h4>Overloaded Constructor</h4>
+                <p>An overloaded constructor can be used to set the value of instance variables for an object while it is being created</p>
+
+                <div class="codeblock">
+                    public Circle(double radius) {
+                        <div class="indent">
+                            this.radius = radius;
+                        </div>
+                    }
+                </div>
+
+                <h3 id="mutators">Mutators</h3>
+
+                <p>Mutators are used to alter the instance variables of an object</p>
+
+                <div class="codeblock">
+                    public void setRadius(double radius) {
+                        <div class="indent">
+                            this.radius = radius;
+                        </div>
+                    }
+                </div>
+
+                <h3 id="accesors">Accesors</h3>
+
+                <p>Accesors are used to retreive information from an object</p>
+
+                <div class="codeblock">
+                    public double getRadius() {
+                        <div class="indent">return radius;</div>
+                    }
+                </div>
+
+                <hr>
+
+                <h2 id="example">Example Class</h2>
+                
+                <h3>Circle Class</h3>
+                <div class="codeblock">
+                    public class Circle {
+                        <div class="indent">
+                            private double radius;<br>
+                            <br>
+                            public Circle() {
+                                <div class="indent">
+                                radius = 0;</div>
+                            }<br>
+                            <br>
+                            public Circle(double radius) {
+                                <div class="indent">
+                                this.radius = radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public void setRadius(double radius) {
+                                <div class="indent">
+                                this.radius = radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public double getRadius() {
+                                <div class="indent">
+                                return radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public double getArea() {
+                                <div class="indent">
+                                return 3.14 * radius *radius;
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+                <h3>CircleTester Class</h3>
+                <div class="codeblock">
+                    public class CircleTester {
+                        <div class="indent">
+                            public static void main(String[] args) {
+                                <div class="indent">
+                                    Circle circle = new Circle();<br>
+                                    circle.setRadius(15);<br>
+                                    System.out.println(circle.getRadius());<br>
+                                    System.out.println(circle.getArea());
+                                </div>
+                            }
+                        </div>
+                    }
+                 </div>
+
+                <h4>Output from Running CircleTester</h4>
+                <div class="codeblock">
+                    15.0<br>
+                    706.5<br>
+                    <br>
+                    Process finished with exit code 0
+                </div>
+
+                <h4 id="screenshots">Screenshots</h4>
+                <img src="images/CircleTesterOutput.png" alt="Screenshot of output of the CircleTester class in IntelliJ IDEA Community Edition">
+
+                <h2>Further Reading</h2>
+                <p><a href="https://www.w3schools.com/java/java_classes.asp" target="_blank" title="W3 Schools">W3 Schools: Java Classes and Objects</a></p>
+                <p><a href="https://www.geeksforgeeks.org/classes-objects-java/" target="_blank" title="Geeks for Geeks Classes">Classes and Objects in Java - Geeks for Geeks</a></p>
+            </section>
+            <aside>
+                <h3>Jump to:</h3>
+                <ul>
+                    <li><a href="#java_classes">Java Classes</a></li>
+                    <li><a href="#declaration">Class Declaration & Instance Variables</a></li>
+                    <li><a href="constructor">Constructor</a></li>
+                    <li><a href="mutators">Mutators</a></li>
+                    <li><a href="accesors">Accesors</a></li>
+                    <li><a href="example">Example Class</a></li>
+                    <li><a href="screenshots">Screenshots</a></li>
+                </ul>
+            </aside>
+            
+
+        <!--CSIP 1010-->
+        </main>
+        <hr>
+        <footer>
+            <img src="images/java-logo.png" alt="Java Logo in black">
+            &copy;RMF 2023
+            <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></p>
+            <p><a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Freepik - Flaticon</a></p>
+        </footer>
+    </div>
+</body>
+</html>

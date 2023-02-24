@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Arrays - CompScience Resources</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/java.png" alt="Java logo">
+            <h1>CompScience Resources</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="csip1010.html">CSIP 1010 Resources</a></li>
+                <!-- <li><a href="csip1020.html">CSIP 1020 Resources</a></li>
+                <li><a href="citc1301.html">CITC 1301 Resources</a></li>
+                <li><a href="citc1302.html">CITC 1302 Resources</a></li>
+                <li><a href="citc1332.html">CITC 1332 Resources</a></li> -->
+                <li><a href="variables.html">Java Variables</a></li>
+                <li><a href="data_types.html">Java Data Types</a></li>
+                <li><a href="access_specifiers.html">Access Specifiers</a></li>
+                <li><a href="classes.html">Java Classes</a></li>
+                <li><a href="objects.html">Java Objects</a></li>
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="main_method.html">Main Method</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <div id="mobile_jump">
+                    <h3>Jump to:</h3>
+                    <ul>
+                        <li><a href="#arrays">Arrays</a></li>
+                        <li><a href="#arraylist">ArrayList</a></li>
+                        <li><a href="#2darray">Two-Dimensional Arrays</a></li>
+                        <li><a href="#enhanced_for">Enhanced for Loop</a></li>
+                    </ul>
+                </div>
+                <h2 id="arrays">Arrays</h2>
+                <p>Array are used to hold multiple values of the same type in one variable. Use square brackets after the data type to declare an array.</p>
+                <div class="codeblock">
+                    int[] values = new int[10];<br>int[] numbers = {1,3,5,7,9,11,13};
+                </div>
+                <p>You can modifiy the value of an element in an array using it's index number. Note that index numbers start from 0, so the first element's index is [0] the second's is [1] and so on</p>
+
+
+                <h2 id="2d_array">Two-Dimensional Arrays</h2>
+                <p>A two dimentional array</p>
+                <div class="codeblock">
+                    int[][] awards = new int[10][4];
+                </div>
+
+                <h2>ArrayList</h2>
+                <p>The <span class="codeline">ArrayList</span> class allows you to create resizeable arrays. It has slightly different syntax from the built in arrays.</p>
+                <div class="codeblock">
+                    ArrayList&lt;Circle&gt; circles = new ArrayList&lt;&gt;;
+                </div>
+
+                <h2 id="enhanced_for">Enhanced for Loop</h2>
+                <p>The enhanced <span class="codeline">for</span> loop is specificaly for looping through arrays. It cannot modifiy the contents of an array</p>
+                <div class="codeblock">
+                    for (int i:numbers) {
+                        <div class="indent">System.out.print(i + " ");</div> 
+                    } 
+                </div>
+
+            </section>
+            <aside>
+                <h3>Jump to:</h3>
+                <ul>
+                    <li><a href="#arrays">Arrays</a></li>
+                    <li><a href="#arraylist">ArrayList</a></li>
+                    <li><a href="#enhanced_for">Enhanced for Loop</a></li>
+                    <li><a href="#2darray">Two-Dimensional Arrays</a></li>
+                </ul>
+            </aside>
+            
+
+        </main>
+        <hr>
+        <footer>
+            <img src="images/java-logo.png" alt="Java Logo in black">
+            &copy;RMF 2023
+            <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></p>
+            <p><a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Freepik - Flaticon</a></p>
+        </footer>
+    </div>
+</body>
+</html>
