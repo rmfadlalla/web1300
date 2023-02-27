@@ -13,12 +13,20 @@ img {
     width: 100%;
     background-color: white;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-family: 'Caveat', cursive;
+} 
+
 
 /* End Global */
 
 /* Mobile */
 .codeblock {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inconsolata', monospace;
     background-color: black;
     color: white;
     width: 95%;
@@ -29,8 +37,7 @@ img {
 
 .codeline {
     display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: .9em;
+    font-family: 'Inconsolata', monospace;
     padding-left: 2px;
     padding-right: 2px;
     background-color: rgba(0, 0, 0, .1);
@@ -60,7 +67,7 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 header img, footer img {
@@ -113,7 +120,7 @@ nav li a:hover {
 
 main{
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 main img {
@@ -158,7 +165,7 @@ footer{
 
 #lower_area {
     margin: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .col {
@@ -206,7 +213,7 @@ td {
 
     header h1 {
         vertical-align: middle;
-        font-size: 2.2em;
+        font-size: 2.8em;
     }
 
     header img, footer img {
@@ -255,8 +262,12 @@ td {
     }
 
     header img{
-        margin-top: 20px;
+        margin-top: 10px;
 
+    }
+
+    header h1{
+        vertical-align: middle;
     }
 
     main {
@@ -311,7 +322,7 @@ td {
     }
 
     #one_column{
-        width: 100%;
+        width: 80%;
         margin: 20px auto
     }
 
@@ -321,6 +332,10 @@ td {
 
     .col {
         margin: 3px;
+    }
+
+    table {
+        width: 75%;
     }
 }
 
