@@ -387,7 +387,7 @@ td {
 
     #lower_area {
         display: flex;
-        padding: auto;
+        /* padding: auto; */
         margin: auto;
     }
 
