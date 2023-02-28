@@ -21,6 +21,49 @@ header h1 {
     font-family: 'Caveat', cursive;
 } 
 
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 350px;
+    margin-left: -50%;
+    background-color: var(--color5);
+    color: var(--color2);
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 100%;
+    left: 50%;
+    overflow-wrap: break-word;
+    /* box-shadow: 1px 1px 2px 0 black; */
+}
+
+.tooltip:hover {
+    color: var(--color1);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border: 5px solid black;
+}
+
+/* End Tooltip */
 
 /* End Global */
 
@@ -31,7 +74,7 @@ header h1 {
     color: white;
     width: 95%;
     margin: 20px auto;
-    padding: 15px 10px;
+    padding: 30px 10px;
     overflow: scroll; 
 }
 
@@ -132,6 +175,10 @@ main img {
 
 main a:hover {
     color: #000;
+}
+
+section {
+    border-radius: 15px;
 }
 
 aside {
