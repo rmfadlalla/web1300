@@ -263,7 +263,7 @@ td {
 /* Tablet */
 @media(min-width: 768px) {
     .tooltip .tooltiptext {
-        max-width: 300px;
+        max-width: 600px;
     }
 
     #container {
