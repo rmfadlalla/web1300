@@ -31,8 +31,8 @@
                 <li><a href="variables.html">Java Variables</a></li>
                 <li><a href="data_types.html">Java Data Types</a></li>
                 <li><a href="access_specifiers.html">Access Specifiers</a></li>
-                <li><a href="classes.html">Java Classes</a></li>
-                <li><a href="objects.html">Java Objects</a></li>
+                <li><a href="classes.html">Java Classes & Objects</a></li>
+                <!-- <li><a href="objects.html">Java Objects</a></li> -->
                 <li><a href="arrays.html">Arrays</a></li>
                 <li><a href="main_method.html">Main Method</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -42,13 +42,41 @@
         <main>
             <section id="one_column">
             <h2>Access Specifiers</h2>
-                <p>Access specifiers tell a program what can or cannot access something, be it a variable, a method, or something else entierly</p>
+                <p>Access specifiers tell a program what can or cannot access something, like a variable or a method.</p>
                 <div class="codeblock">
-                    <p>private int day = 3; <br><br>public int getNumber(){ <br><br>private String address; <br><br>public void setTime { <br><br> public static void main(String args[]){ </p>
+                    <br>
+                    <span class="tooltip">private<span class="tooltiptext">"private" access modifier in a variable declaration</span></span> int day = 3; <br>
+                    <span class="tooltip">public<span class="tooltiptext">"public" access modifier in a method header</span></span> int getNumber(){ <br>
+                    <span class="tooltip">private<span class="tooltiptext">"private" access modifier in a variable declaration</span></span> String address; <br>
+                    <span class="tooltip">public<span class="tooltiptext">"public" access modifier in a method header</span></span> void setTime() { <br>
+                    <span class="tooltip">public<span class="tooltiptext">"public" access modifier in the main method header</span></span> static void main(String args[]) { 
                 </div>
                 <p>Most commonly you will see <span class="codeline">public</span> and <span class="codeline">private</span></p>
             </section>
         </main>
+        <table>
+            <tr>
+                <th>Access Specifiers</th>
+                <th>Description</th>
+            </tr>
+            
+            <tr>
+                <td><span class="codeline">default</span></td>
+                <td>Can be accesed by anything in the same package</td>
+            </tr>
+            <tr>
+                <td><span class="codeline">public</span></td>
+                <td>Can be accesed by anything</td>
+            </tr>
+            <tr>
+                <td><span class="codeline">private</span></td>
+                <td>Can be accesed from inside the same class</td>
+            </tr>
+            <tr>
+                <td><span class="codeline">protected</span></td>
+                <td>Can be accesed from inside the same class or it's subclasses</td>
+            </tr>
+        </table>
         <hr>
         <footer>
             <img src="images/java-logo.png" alt="Java Logo in black">

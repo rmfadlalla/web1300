@@ -21,6 +21,11 @@ header h1 {
     font-family: 'Caveat', cursive;
 } 
 
+/* End Global */
+
+
+/* Mobile */
+
 /* Tooltip */
 
 .tooltip {
@@ -65,9 +70,6 @@ header h1 {
 
 /* End Tooltip */
 
-/* End Global */
-
-/* Mobile */
 .codeblock {
     font-family: 'Inconsolata', monospace;
     background-color: black;
@@ -76,6 +78,10 @@ header h1 {
     margin: 20px auto;
     padding: 30px 10px;
     overflow: scroll; 
+}
+
+.codeblock .comment {
+    color: var(--color3);
 }
 
 .codeline {
@@ -256,6 +262,10 @@ td {
 
 /* Tablet */
 @media(min-width: 768px) {
+    .tooltip .tooltiptext {
+        max-width: 300px;
+    }
+
     #container {
         width: 85%;
     }
@@ -314,6 +324,7 @@ td {
 
 @media(min-width: 1024px) {
     
+
     #container {
         width: 60%;
         min-width: 985px;
