@@ -1,0 +1,414 @@
+/* Global */
+:root {
+    --color1: #FF6700;
+    --color2: #EBEBEB;
+    --color3: #C0C0C0;
+    --color4: #3A6EA5;
+    --color5: #004E98;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-family: 'Caveat', cursive;
+} 
+
+/* End Global */
+
+
+/* Mobile */
+
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 350px;
+    margin-left: -50%;
+    background-color: var(--color5);
+    color: var(--color2);
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 100%;
+    left: 50%;
+    overflow-wrap: break-word;
+    /* box-shadow: 1px 1px 2px 0 black; */
+}
+
+.tooltip:hover {
+    color: var(--color1);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border: 5px solid black;
+}
+
+/* End Tooltip */
+
+.codeblock {
+    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    color: white;
+    width: 95%;
+    margin: 20px auto;
+    padding: 30px 10px;
+    overflow: scroll; 
+}
+
+.codeblock .comment {
+    color: var(--color3);
+}
+
+.codeline {
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.indent {
+    margin-left: 30px;
+}
+
+body {
+    background-color: var(--color5);
+    margin: auto;
+}
+
+#container{
+    width: 95%;
+    background-color: var(--color2);
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+header {
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header img, footer img {
+    display: block;
+    width: 15%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: var(--color4);
+    text-align: center;
+    padding: 1px 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    background-color: var(--color1);
+    color: var(--color2);
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+#mobile_jump li {
+    margin-bottom: 10px;
+}
+
+#mobile_jump a {
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+main{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+main img {
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+main a:hover {
+    color: #000;
+}
+
+section {
+    border-radius: 15px;
+}
+
+aside {
+    border-radius: 15px;
+    display: none;
+    width: 0;
+}
+
+.btn {
+    display: block;
+    background-color: var(--color1);
+    min-width: 270px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    color: var(--color2);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+footer {
+    background-color: var(--color4);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+#lower_area {
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+.col {
+    border: 2px solid var(--color5);
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 7px;
+}
+
+table {
+    border: 2px solid var(--color5);
+    background-color: var(--color4);
+    width: 95%;
+    margin: 20px auto;
+}
+
+td, th {
+    border: 2px solid var(--color5);
+    background-color: var(--color2);
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+th {
+    color: var(--color1);
+    background-color: var(--color2);
+
+}
+
+td {
+    margin: 30px;
+    background-color: var(--color2);
+
+}
+/* End Mobile */
+
+/* Tablet */
+@media(min-width: 768px) {
+    .tooltip .tooltiptext {
+        max-width: 600px;
+    }
+
+    #container {
+        width: 85%;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        vertical-align: middle;
+        font-size: 2.8em;
+    }
+
+    header img, footer img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10%;
+        margin: auto 20px;
+    }
+
+    nav {
+        width: 100%;
+        display: inline-block;
+        border: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 300px;
+    }
+
+    .codeblock {
+        padding: 15px 20px;
+    }
+
+    main {
+        display: flex;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #lower_area {
+        margin: 20px;
+        padding: 20px;
+    }
+
+}
+
+/* End Tablet */
+
+/* Desktop */
+
+@media(min-width: 1024px) {
+    
+
+    #container {
+        width: 60%;
+        min-width: 985px;
+    }
+
+    header img{
+        margin-top: 10px;
+
+    }
+
+    header h1{
+        vertical-align: middle;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #mobile_jump ul {
+        list-style-type: none;
+    }
+
+    #mobile_jump {
+        display: none;
+    }
+    
+    section, aside {
+        margin: 20px 20px;
+        border: 2px solid black;
+    }
+
+    section {
+        width: 75%;
+        padding: 20px;
+
+    }
+
+    aside {
+        display: block;
+        width: 25%;
+        padding: 10px;
+    }
+
+    aside ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    aside li {
+        margin-bottom: 10px;
+    }
+
+    aside a {
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+
+    #mobile_jump ul {
+        list-style-type: none;
+    }
+
+    #mobile_jump {
+        display: none;
+    }
+
+    #one_column{
+        width: 80%;
+        margin: 20px auto;
+        border: none;
+    }
+
+    #lower_area {
+        display: flex;
+        /* padding: auto; */
+        margin: auto;
+    }
+
+    .col {
+        margin: 3px;
+    }
+
+    table {
+        width: 75%;
+    }
+}
+
+/* End Desktop */

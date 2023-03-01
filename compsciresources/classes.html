@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inconsolata:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Classes - CompScience Resources</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            
+            <h1><img src="images/code.png" alt="code">CompScience Resources</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="csip1010.html">CSIP 1010 Resources</a></li>
+                <!-- <li><a href="csip1020.html">CSIP 1020 Resources</a></li>
+                <li><a href="citc1300.html">CITC 1300 Resources</a></li>
+                <li><a href="citc1301.html">CITC 1301 Resources</a></li>
+                <li><a href="citc1302.html">CITC 1302 Resources</a></li>
+                <li><a href="citc1332.html">CITC 1332 Resources</a></li> -->
+                <li><a href="variables.html">Java Variables</a></li>
+                <li><a href="data_types.html">Java Data Types</a></li>
+                <li><a href="access_specifiers.html">Access Specifiers</a></li>
+                <li><a href="classes.html">Java Classes & Objects</a></li>
+                <!-- <li><a href="objects.html">Java Objects</a></li> -->
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="main_method.html">Main Method</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <div id="mobile_jump">
+                    <h3>Jump to:</h3>
+                    <ul>
+                        <li><a href="#java_classes">Java Classes</a></li>
+                        <li><a href="#declaration">Class Declaration & Instance Variables</a></li>
+                        <li><a href="#methods">Methods</a></li>
+                        <li><a href="#constructor">Constructor</a></li>
+                        <li><a href="#mutators">Mutators</a></li>
+                        <li><a href="#accesors">Accesors</a></li>
+                        <li><a href="#objects">Java Objects</a></li>
+                        <li><a href="#example">Example</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </div>
+                <h2 id="java_classes">About Java Classes And Objects</h2>
+
+                <p>In Java, classes are like blueprints for creating objects. The class tells the computer what the objects contain and what you can do with them.</p>
+
+                <hr>
+
+                <h2>Parts of a Java Class</h2>
+
+                <p>Every Java class is made up a few main parts: </p>
+
+                <ul>
+                    <li>A class declaration amd instance variables</li>
+                    <li>A constructor</li>
+                    <li>Mutators (also called Getters)</li>
+                    <li>Accesors (also called Setters)</li>
+                </ul>
+
+                <p>Each of these parts preforms it's own roll to make a class function.</p>
+
+                <h3 id="declaration">Class Declaration & Instance Variables</h3>
+
+                <p>This is where you put the name of the class and declare instance variables.</p>
+                <p>A class name should start with an uppercase letter and be in CamelCase. It cannot contain spaces and should avoid using special characters. The class name should be the same as the name of the file that the class is in.</p> 
+                <p>Variables in a class must have an access specifier (usualy <span class="codeline">private</span>), a data type, and a name. See <a target="_blank" href="variables.html">Variables</a></p>
+
+                <div class="codeblock">
+                    <br>
+                    <span class="comment">// Class Declaration</span><br>
+                    <span class="tooltip">public<span class="tooltiptext">Access Specifier</span></span> <span class="tooltip">class<span class="tooltiptext">"class" keyword tells the program this is a class declaration</span></span> <span class="tooltip">Circle<span class="tooltiptext">Class Name</span></span> {
+
+                        <div class="indent">
+                            <span class="comment">// Instance Variables</span><br>
+
+                            <span class="tooltip">private<span class="tooltiptext">Access Specifier</span></span> <span class="tooltip">double<span class="tooltiptext">Data Type</span></span> <span class="tooltip">radius<span class="tooltiptext">Variable Name</span></span>;<br>
+                        </div>
+                </div>
+
+                <h3 id="methods">Methods</h3>
+
+                <p>A method is a block of code that only runs when it is called. Methods make up most of a class, and each one has a specific purpose. </p>
+
+                <h3 id="constructor">Constructor</h3>
+
+                <p>A constructor is a specal method used to create objects of a class. It is responseable for initializing instance variables. It has no return type, not even <span class="codeline">void</span>. </p>
+
+                <div class="codeblock">
+                    <br>
+                    <div class="comment">/** <br>
+                        * Constructor <br>
+                        */
+                    </div>
+                    <span class="tooltip">public<span class="tooltiptext">Access Specifier</span></span> <span class="tooltip">Circle<span class="tooltiptext">Method Name</span></span><span class="tooltip">()<span class="tooltiptext">This is where the arguments would go. If the method doesn't need argumets, leave it empty like it is here.</span></span> {
+                        <div class="indent">
+                            <span class="tooltip">radius<span class="tooltiptext">this refers to the instance variable declared earlier</span></span> = <span class="tooltip">0<span class="tooltiptext">This is a default value. If no other value is given, this is what will be used</span></span>;
+                        </div>
+                    }
+                </div>
+
+                <h4>Overloaded Constructor</h4>
+                <p>An overloaded constructor can be used to set the value of instance variables for an object while it is being created</p>
+
+                <div class="codeblock">
+                    <div class="comment">/** <br>
+                        * Overloaded Constructor<br>
+                        * @param radius<br>
+                        */
+                    </div>
+                    public Circle(double radius) {
+                        <div class="indent">
+                            this.radius = radius;
+                        </div>
+                    }
+                </div>
+
+                <h3 id="mutators">Mutators</h3>
+
+                <p>Mutators are used to alter the instance variables of an object</p>
+
+                <div class="codeblock">
+                    <div class="comment">/** <br>
+                        * Mutateor<br>
+                        * @param radius<br>
+                        */
+                    </div>
+                    public void setRadius(double radius) {
+                        <div class="indent">
+                            this.radius = radius;
+                        </div>
+                    }
+                </div>
+
+                <h3 id="accesors">Accesors</h3>
+
+                <p>Accesors are used to retreive information from an object</p>
+
+                <div class="codeblock">
+                    public double getRadius() {
+                        <div class="indent">return radius;</div>
+                    }
+                </div>
+
+                <hr>
+
+                <h2 id="objects">Objects</h2>
+
+                <p>Objects are created from classes. Creating an object is like creating a variable. They can be accesed and modified by calling the methods of the class the object is created from</p>
+
+                <div class="codeblock">
+                    <br><br>
+                    <span class="tooltip">Circle<span class="tooltiptext">The data type is the class name</span></span> <span class="tooltip">c1<span class="tooltiptext">Name</span></span> = <span class="tooltip">new<span class="tooltiptext">The "new" keyword tells the program to create a new object</span></span> <span class="tooltip">Circle()<span class="tooltiptext">This is a call to the constructor of the Circle class</span></span>; <span class="comment">// Create new Circle object named c1</span><br>
+
+                    <span class="tooltip">c1.setRadius<span class="tooltiptext">This is a call to the setRadius method</span></span>(<span class="tooltip">15<span class="tooltiptext">This is an argument to be passed to the method</span></span>); <span class="comment">//Set the radius of c1 to 15</span><br>
+                    <br>
+                    <span class="comment">//Print info on c1</span> <br>
+                    System.out.println("c1: ");<br>
+                    System.out.println("Radius = " + <span class="tooltip">c1.getRadius()<span class="tooltiptext">This is a call to the getRadius method</span></span>);<br>
+                    System.out.println("Area = " + <span class="tooltip">c1.getArea()<span class="tooltiptext">This is a call to the getArea method</span></span>);<br>
+                    System.out.println("");<br>
+                    <br>
+                    <span class="tooltip">Circle<span class="tooltiptext">The data type is the class name</span></span> <span class="tooltip">c2<span class="tooltiptext">Name</span></span> = <span class="tooltip">new<span class="tooltiptext">The "new" keyword tells the program to create a new object</span></span> <span class="tooltip">Circle(3)<span class="tooltiptext">This is a call to the overloaded constructor of the Circle class that also passes the argument 3</span></span>; <span class="comment">// Create new Circle object named c2 and set it's radius to 3</span><br>
+                    <br>
+                    <span class="comment">//Print info on c2</span><br>
+                    System.out.println("c2: ");<br>
+                    System.out.println("Radius = " + <span class="tooltip">c2.getRadius()<span class="tooltiptext">This is a call to the getRadius method</span></span>);<br>
+                    System.out.println("Area = " +<span class="tooltip">c2.getArea()<span class="tooltiptext">This is a call to the getArea method</span></span>);<br><br>
+                </div>
+
+                <hr>
+
+                <h2 id="example">Example</h2>
+                
+                <h3>Circle Class</h3>
+                <div class="codeblock">
+                    public class Circle {
+                        <div class="indent">
+                            private double radius;<br>
+                            <br>
+                            public Circle() {
+                                <div class="indent">
+                                radius = 0;</div>
+                            }<br>
+                            <br>
+                            public Circle(double radius) {
+                                <div class="indent">
+                                this.radius = radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public void setRadius(double radius) {
+                                <div class="indent">
+                                this.radius = radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public double getRadius() {
+                                <div class="indent">
+                                return radius;
+                                </div>
+                            }<br>
+                            <br>
+                            public double getArea() {
+                                <div class="indent">
+                                return 3.14 * radius *radius;
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+                <h3>CircleTester Class</h3>
+                <div class="codeblock">
+                    public class CircleTester {
+                        <div class="indent">
+                            public static void main(String[] args) {
+                                <div class="indent">
+                                    <br>
+                                    Circle c1 = new Circle();<br>
+                                    c1.setRadius(15);<br>
+                                    System.out.println("c1: ");<br>
+                                    System.out.println("Radius = " + c1.getRadius());<br>
+                                    System.out.println("Area = " + c1.getArea());<br>
+                                    System.out.println("");<br>
+                                    Circle c2 = new Circle(3);<br>
+                                    System.out.println("c2: ");<br>
+                                    System.out.println("Radius = " + c2.getRadius());<br>
+                                    System.out.println("Area = " + c2.getArea());<br><br>
+                                </div>
+                            }
+                        </div>
+                    }
+                 </div>
+
+                <h4>Output from Running CircleTester</h4>
+                <div class="codeblock">
+                    15.0<br>
+                    706.5<br>
+                    <br>
+                    Process finished with exit code 0
+                </div>
+
+                <h4 id="screenshots">Screenshots</h4>
+                <img src="images/CircleTesterOutput.png" alt="Screenshot of output of the CircleTester class in IntelliJ IDEA Community Edition">
+
+                <h2>Further Reading</h2>
+                <p><a href="https://www.w3schools.com/java/java_classes.asp" target="_blank" title="W3 Schools">W3 Schools: Java Classes and Objects</a></p>
+                <p><a href="https://www.geeksforgeeks.org/classes-objects-java/" target="_blank" title="Geeks for Geeks Classes">Classes and Objects in Java - Geeks for Geeks</a></p>
+            </section>
+            <aside>
+                <h3>Jump to:</h3>
+                <ul>
+                    <li><a href="#java_classes">Java Classes</a></li>
+                    <li><a href="#declaration">Class Declaration & Instance Variables</a></li>
+                    <li><a href="#methods">Methods</a></li>
+                    <li><a href="#constructor">Constructor</a></li>
+                    <li><a href="#mutators">Mutators</a></li>
+                    <li><a href="#accesors">Accesors</a></li>
+                    <li><a href="#objects">Java Objects</a></li>
+                    <li><a href="#example">Example</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                </ul>
+            </aside>
+            
+
+        <!--CSIP 1010-->
+        </main>
+        <hr>
+        <footer>
+            <img src="images/java-logo.png" alt="Java Logo in black">
+            &copy;RMF 2023
+            <p><a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Royyan Wijaya - Flaticon</a></p>
+            <p><a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Freepik - Flaticon</a></p>
+        </footer>
+    </div>
+</body>
+</html>
