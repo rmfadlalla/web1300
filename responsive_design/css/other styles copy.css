@@ -1,0 +1,282 @@
+/* Global */
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* End Global */
+
+/* Mobile */
+.codeblock {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px 10px;
+    overflow: scroll;   
+}
+
+.codeline {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9em;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.indent {
+    margin-left: 30px;
+}
+
+body {
+    background-color: #14213D;
+    margin: auto;
+}
+
+#container{
+    width: 95%;
+    background-color: #E5E5E5;
+    margin: 20px auto;
+    border: solid #14213D;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #E5E5E5;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+header img {
+    display: block;
+    width: 15%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+nav {
+    background-color: #FCA311;
+    text-align: center;
+    padding: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    background-color: #FFFFFF;
+    color: #14213D;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav li a:hover {
+    background-color: #E5E5E5;
+}
+
+main {
+    background-color: #E5E5E5;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+main img {
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+main a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+aside {
+    display: none;
+    width: 0;
+}
+
+.button {
+    background-color: #FFFFFF;
+    color: #14213D;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: #FCA311;
+} 
+
+footer {
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+    width: 7%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#lower_area {
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.col {
+    border: 2px solid #14213D;
+    margin: 10px auto;
+    padding: 7px;
+}
+
+table {
+    border: 2px solid #14213D;
+    width: 95%;
+    margin: 20px auto;
+}
+
+td, th {
+    border: 2px solid #000;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+th {
+    background-color: #FCA311;
+}
+
+td {
+    margin: 30px;
+    background-color: #E5E5E5;
+}
+
+/* End Mobile */
+
+/* Tablet */
+@media(min-width: 768px) {
+    #container {
+        width: 85%;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: inline-block;
+        border: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 300px;
+    }
+
+    .codeblock {
+        padding: 15px 20px;
+    }
+
+    main {
+        display: flex;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    header img, footer img {
+        width: 10%;
+    }
+    
+}
+
+/* End Tablet */
+
+/* Desktop */
+
+@media(min-width: 1024px) {
+    
+    #container {
+        width: 50%;
+    }
+
+    main {
+        display: flex;
+    }
+    
+    section, aside {
+        margin: 20px 20px;
+        border: 2px solid #14213D;
+    }
+
+    section {
+        width: 75%;
+        padding: 20px;
+
+    }
+
+    aside {
+        display: block;
+        width: 25%;
+        padding: 10px;
+    }
+
+    aside ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    aside li {
+        margin-bottom: 10px;
+    }
+
+    aside a {
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+
+    #mobile_jump ul {
+        list-style-type: none;
+    }
+
+    #mobile_jump {
+        display: none;
+    }
+
+    #one_column{
+        width: 100%;
+        margin: 20px auto
+    }
+}

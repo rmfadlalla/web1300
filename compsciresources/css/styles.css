@@ -262,9 +262,9 @@ td {
 
 /* Tablet */
 @media(min-width: 768px) {
-    .tooltip .tooltiptext {
+    /* .tooltip .tooltiptext {
         max-width: 600px;
-    }
+    } */
 
     #container {
         width: 85%;

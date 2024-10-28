@@ -66,10 +66,10 @@
                 <p>Every Java class is made up a few main parts: </p>
 
                 <ul>
-                    <li>A class declaration amd instance variables</li>
+                    <li>A class declaration and instance variables</li>
                     <li>A constructor</li>
-                    <li>Mutators (also called Getters)</li>
-                    <li>Accesors (also called Setters)</li>
+                    <li>Mutators (also called getters)</li>
+                    <li>Accesors (also called setters)</li>
                 </ul>
 
                 <p>Each of these parts preforms it's own roll to make a class function.</p>
@@ -94,7 +94,26 @@
 
                 <h3 id="methods">Methods</h3>
 
-                <p>A method is a block of code that only runs when it is called. Methods make up most of a class, and each one has a specific purpose. </p>
+                <p>A method is a block of code that only runs when it is called. Methods make up most of a class, and each one has a specific purpose. There are a few main parts to a method:</p>
+                <ul>
+                    <li>A specification (a comment with information about the method)
+                        <div class="codeblock">
+                            <div class="">/** <br>
+                                * Comment with documentation<br>
+                                * @param aParam
+                                * @param anotherParam
+                                * @return
+                                */
+                            </div>
+                        </div>
+                    </li>
+                    <li>a header
+                        <div class="codeblock">
+                            <span class="tooltip">public<span class="tooltiptext">Access Modifier</span></span> <span class="tooltip">String<span class="tooltiptext">Return Type</span></span> <span class="tooltip">aMethod<span class="tooltiptext">More</span></span>(int aParam, double anotherParam) <br>
+                        </div>
+                    </li>
+                    
+                </ul>
 
                 <h3 id="constructor">Constructor</h3>
 
@@ -122,9 +141,10 @@
                         * @param radius<br>
                         */
                     </div>
-                    public Circle(double radius) {
+                    <span class="tooltip">public<span class="tooltiptext">Access Modifier</span></span> <span class="tooltip">Circle<span class="tooltiptext">Method Name</span></span><span class="tooltip">(double radius)<span class="tooltiptext">Add paramaters here.</span></span> {
                         <div class="indent">
-                            this.radius = radius;
+                            <div class="comment">//Assign received values to instance variables</div>
+                            <span class="tooltip">this.radius<span class="tooltiptext">The "this" keyword tells Java that the "radius" that comes after the dot refers to the instance variable</span></span> = <span class="tooltip">radius<span class="tooltiptext">this "radius" refers to the paramater</span></span>;
                         </div>
                     }
                 </div>
@@ -261,6 +281,7 @@
                 <h2>Further Reading</h2>
                 <p><a href="https://www.w3schools.com/java/java_classes.asp" target="_blank" title="W3 Schools">W3 Schools: Java Classes and Objects</a></p>
                 <p><a href="https://www.geeksforgeeks.org/classes-objects-java/" target="_blank" title="Geeks for Geeks Classes">Classes and Objects in Java - Geeks for Geeks</a></p>
+                <p><a href="https://www.cs.cornell.edu/courses/cs1130/2012sp/1130selfpaced/module2/module2part1/methodHeaders.html">Method Headers - Cornell University Department of Computer Science</a></p>
             </section>
             <aside>
                 <h3>Jump to:</h3>
